@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisy ui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body
+    class="max-w-sm flex flex-col mx-auto p-3 items-center justify-center h-[100vh] relative bg-slate-400 overflow-hidden"
+  >
+    <div
+      class="w-[300px] h-[300px] bg-slate-500 rounded-full absolute top-[-50px] left-[-50px]"
+    ></div>
+    <!------------- login form start here -------------- -->
+    <section id="sign_in_container" class="p-5 relative bg-slate-100 rounded-lg shadow-lg ">
+      <div class="text-center">
+        <i class="fa-regular fa-user text-3xl"></i>
+      </div>
+      <div>
+        <h1 class="font-bold text-2xl text-center">Login</h1>
+        <div class="flex mt-2">
+          <p>Don't have an account?</p>
+          <button id="sign-up_btn" class="ml-2 text-[#2279fc] cursor-pointer border-none">
+            Sign Up
+          </button>
+        </div>
+      </div>
+      <!-- mobile number  -->
+      <div class="mt-2">
+        <input
+          id="mobile_number"
+          type="text"
+          placeholder="+88"
+          class="input my-2 w-full outline-none rounded-full"
+        />
+        <!-- Password  -->
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          class="input my-2 w-full outline-none rounded-full"
+        />
+
+        <button class="text-[#2279fc]">Forget Password?</button>
+      </div>
+
+      <div class="my-5">
+        <button
+          id="login_btn"
+          class="btn btn-soft btn-success text-[#ececec] bg-[#2279fc] w-full rounded-full"
+        >
+          Login
+        </button>
+      </div>
+    </section>
+
+
+    <!------------ sign up form start here ---------- -->
+
+
+     <section id="sign_up_container" class="p-5 relative bg-slate-100 rounded-lg shadow-lg hidden">
+      <div class="text-center">
+        <i class="fa-regular fa-user text-3xl"></i>
+      </div>
+      <div>
+        <h1 class="font-bold text-2xl text-center">Create Account</h1>
+        <div class="flex mt-2">
+          <p>Allready have an account?</p>
+          
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <!-- name input fild  -->
+        <input id="name"
+          type="text"
+          placeholder="Name"
+          class="input my-2 w-full outline-none rounded-full"
+        />
+        <!-- email input fild  -->
+        <input id="email_input"
+          type="text"
+          placeholder="Email or Phone"
+          class="input my-2 w-full outline-none rounded-full"
+        />
+        <!-- pin input  -->
+         <input id="pin_number"
+          type="text"
+          placeholder="Password"
+          class="input my-2 w-full outline-none rounded-full"
+        />
+
+      </div>
+
+      <div class="my-5">
+        <button id="signUp-btn"
+          class="btn btn-soft btn-success text-[#ececec] bg-[#2279fc] w-full rounded-full"
+        >
+         Sign Up
+        </button>
+      </div>
+    </section>
+
+    <script src="./script/login.js"></script>
+  </body>
+</html>

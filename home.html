@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+
+  <body class="max-w-sm h-screen mx-auto relative bg-slate-200 overflow-hidden">
+    <!-- =====main interface section start here ========= -->
+    <section class="relative h-screen">
+      <!-- navigation section start here  -->
+      <div
+        class="flex justify-between p-4 bg-red-500 text-white cursor-pointer items-center h-[10vh]"
+      >
+        <i id="Log_out_btn" class="fa-solid fa-arrow-right-from-bracket"></i>
+        <h1 class="font-extrabold">City Clone</h1>
+        <i class="fa-solid fa-align-right"></i>
+      </div>
+      <!-- user information section start here  -->
+       <!-- account section  -->
+      <section class="" >
+        <div
+        class="p-5 h-[20vh] bg-red-500 flex flex-col justify-center"
+      >
+        <p class="text-white">Good Evening</p>
+        <h1 class="font-bold text-2xl text-white">Md. Sohidul islam sazib</h1>
+      </div>
+      <!-- card nav start here  -->
+      <div class="flex justify-start gap-10 p-5 rounded-b-3xl bg-red-500">
+        <button id="account" class="text-white cursor-pointer card_btn">Account</button>
+        <button id="type_card" class="text-white cursor-pointer card_btn">Card</button>
+        <button id="Loan_card" class="text-white cursor-pointer card_btn">Loans</button>
+      </div>
+
+      <!-- card section start here  -->
+
+      <div class="parent h-[40vh] items-center flex flex-col justify-center">
+        <!-- card 1 -->
+         <div id="account_card" class="cards w-[320px] mx-auto h-[180px] p-5 bg-slate-100 drop-shadow-lg cursor-pointer rounded-lg">
+          <p >General Savings A/C</p>
+          <h4 class="mt-5 font-semibold">247888787457</h4>
+          <p class="mt-5">Tap to see Balance</p>
+         </div>
+         <!-- card 2  -->
+         <div id="card_card" class="cards w-[320px] mx-auto h-[180px] p-5 bg-red-400 drop-shadow-lg cursor-pointer rounded-lg relative hidden">
+          <div>
+            <h2>City Card</h2>
+          </div>
+          <h4 class="mt-5 font-semibold inline-block bg-red-300 p-1">24788****457</h4>
+           <h1 class="uppercase font-bold absolute bottom-2 right-2 text-cyan-50 text-2xl shadow-md">Visa</h1>
+         </div>
+
+         <!-- loans card  -->
+          <div id="loan_account_card" class="cards w-[320px] mx-auto h-[180px] p-5 bg-slate-200 drop-shadow-lg cursor-pointer hidden rounded-lg">
+          <p >General Savings A/C</p>
+          <h4 class="mt-5 font-semibold">247888787457</h4>
+          <p class="mt-5">Tap to see Balance</p>
+         </div>
+
+
+      </div>
+      </section>
+
+      <!-- transform section =========== -->
+       <section class="transform_container p-3 hidden">
+        <!-- grid parent container  -->
+        <div class="grid grid-cols-2 ">
+           <div class="p-5 border flex flex-col justify-center items-center">
+            <i class="fa-regular fa-house text-red-500 text-5xl mb-2 "></i>
+            <p class="text-red-700">City Bank Account</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center" >
+            <i class="fa-solid fa-building-columns text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Others Bank A/C</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center">
+            <i class="fa-solid fa-cash-register text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Cash by Code</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center">
+            <i class="fa-solid fa-recycle text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Binimoy</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center">
+            <i class="fa-regular fa-envelope text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Email Transfer</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center">
+            <i class="fa-thin fa-mobile-screen-button text-red-500 text-5xl mb-2"></i>
+            <i class="fa-solid fa-mobile-screen-button text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Mobile transfer</p>
+           </div>
+        </div>
+       </section>
+
+       <!-- payment section container ========= -->
+        <section class="payment_container hidden">
+            <div class="grid grid-cols-2 ">
+           <div class="p-5 border flex flex-col justify-center items-center">
+            <i class="fa-solid fa-earth-africa text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Mobile Recharge</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center" >
+            <i class="fa-solid fa-id-card text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">City Credit Card</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center ">
+            <i class="fa-solid fa-house-chimney-crack text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">insurance</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center">
+           <i class="fa-solid fa-newspaper text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Bill & Fees</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center">
+            <i class="fa-solid fa-check-to-slot text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Value Added Service</p>
+           </div>
+
+           <div class="p-5 border flex flex-col justify-center items-center">
+            
+             <i class="fa-brands fa-amazon-pay text-red-500 text-5xl mb-2"></i>
+            <p class="text-red-700">Visa Instant Payment</p>
+           </div>
+        </div>
+        </section>
+    </section>
+    <!-- ==========footer section  start here ============= -->
+    <section>
+      <div
+        class="flex justify-between bg-gray-50 h-20 w-[100%] absolute bottom-0 left-0 p-3 rounded-t-2xl"
+      >
+        <div class="text-center cursor-pointer">
+          <i class="fa-solid fa-key text-sm"></i>
+          <h3 class="text-sm">Account</h3>
+        </div>
+        <div class="text-center cursor-pointer">
+          <i class="fa-solid fa-arrow-right-arrow-left text-sm"></i>
+          <h3 class="text-sm">Transfers</h3>
+        </div>
+        <div class="text-center cursor-pointer border p-5 flex flex-col items-center justify-center rounded-3xl">
+          <i class="fa-sharp fa-solid fa-qrcode"></i>
+          <h3 class="text-sm">QR</h3>
+        </div>
+        <div class="text-center cursor-pointer">
+          <i class="fa-solid fa-money-bill-1-wave text-sm"></i>
+          <h3 class="text-sm">Payments</h3>
+        </div>
+        <div class="text-center cursor-pointer">
+          <i class="fa-regular fa-compass text-sm"></i>
+          <h3 class="text-sm">Explore</h3>
+        </div>
+      </div>
+    </section>
+    <script src="./script/home.js"></script>
+  </body>
+</html>
