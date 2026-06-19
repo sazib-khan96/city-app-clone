@@ -3,6 +3,9 @@ const phoneNumber = document.getElementById("mobile_number");
 const password = document.getElementById("password");
 let Phone = "123456789";
 const pinNumber = "1234";
+
+
+
 // get valus function ===========
 function getValue(id) {
   const values = document.getElementById(id).value;

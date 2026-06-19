@@ -22,25 +22,20 @@
   </head>
 
   <body
-    class="max-w-sm flex flex-col mx-auto p-3 items-center justify-center h-[100vh] relative bg-slate-400 overflow-hidden"
+    class=" bg-[#f1f5f9] max-w-sm flex flex-col mx-auto p-3 items-center justify-center h-screen relative  overflow-hidden"
   >
-    <div
-      class="w-[300px] h-[300px] bg-slate-500 rounded-full absolute top-[-50px] left-[-50px]"
-    ></div>
+    <!-- logo container  -->
+    <div class="p-5">
+      <h1 class="text-white bg-red-500 -tracking-[-5px] p-2 text-center">
+        City Touch
+      </h1>
+      <p class="px-2 text-center">DIGITAL BANKING</p>
+    </div>
     <!------------- login form start here -------------- -->
-    <section id="sign_in_container" class="p-5 relative bg-slate-100 rounded-lg shadow-lg ">
-      <div class="text-center">
-        <i class="fa-regular fa-user text-3xl"></i>
-      </div>
-      <div>
-        <h1 class="font-bold text-2xl text-center">Login</h1>
-        <div class="flex mt-2">
-          <p>Don't have an account?</p>
-          <button id="sign-up_btn" class="ml-2 text-[#2279fc] cursor-pointer border-none">
-            Sign Up
-          </button>
-        </div>
-      </div>
+    <section
+      id="sign_in_container"
+      class="p-5 relative bg-slate-100 rounded-lg shadow-lg"
+    >
       <!-- mobile number  -->
       <div class="mt-2">
         <input
@@ -57,65 +52,98 @@
           class="input my-2 w-full outline-none rounded-full"
         />
 
-        <button class="text-[#2279fc]">Forget Password?</button>
+        <button class="text-[#fa1313]">Forget Password?</button>
       </div>
 
       <div class="my-5">
         <button
           id="login_btn"
-          class="btn btn-soft btn-success text-[#ececec] bg-[#2279fc] w-full rounded-full"
+          class="p-2 btn-soft btn-success text-[#ececec] bg-[#ff3d1b] w-full rounded-full"
         >
           Login
         </button>
       </div>
-    </section>
 
+      <div>
+        <div class="flex mt-2">
+          <p>Don't have an account?</p>
+          <button
+            id="sign-up_btn"
+            class="ml-2 text-[#fc2d22] cursor-pointer border-none"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!------------ sign up form start here ---------- -->
 
-
-     <section id="sign_up_container" class="p-5 relative bg-slate-100 rounded-lg shadow-lg hidden">
-      <div class="text-center">
-        <i class="fa-regular fa-user text-3xl"></i>
-      </div>
+    <section
+      id="sign_up_container"
+      class="p-5 relative bg-slate-100 rounded-lg shadow-lg hidden"
+    >
       <div>
         <h1 class="font-bold text-2xl text-center">Create Account</h1>
         <div class="flex mt-2">
           <p>Allready have an account?</p>
-          
         </div>
       </div>
 
       <div class="mt-2">
         <!-- name input fild  -->
-        <input id="name"
+        <input
+          id="name"
           type="text"
           placeholder="Name"
           class="input my-2 w-full outline-none rounded-full"
         />
         <!-- email input fild  -->
-        <input id="email_input"
+        <input
+          id="email_input"
           type="text"
           placeholder="Email or Phone"
           class="input my-2 w-full outline-none rounded-full"
         />
         <!-- pin input  -->
-         <input id="pin_number"
+        <input
+          id="pin_number"
           type="text"
           placeholder="Password"
           class="input my-2 w-full outline-none rounded-full"
         />
-
       </div>
 
       <div class="my-5">
-        <button id="signUp-btn"
-          class="btn btn-soft btn-success text-[#ececec] bg-[#2279fc] w-full rounded-full"
+        <button
+          id="signUp-btn"
+          class="p-3 btn-soft btn-success text-[#ececec] bg-[#fc3822] w-full rounded-full"
         >
-         Sign Up
+          Sign Up
         </button>
       </div>
     </section>
+
+    <section class="p-3 mt-10">
+      <div>
+        <ul
+          class="flex gap-5 divide-x-2 divide-solid divide-red-500 text-center"
+        >
+          <li class=   "px-3 cursor-pointer">FaQ</li>
+          <li class="px-3 cursor-pointer">ATM & Branch</li>
+          <li class="px-3 cursor-pointer">Info</li>
+        </ul>
+        <ul class="flex divide-x-2 divide-solid divide-red-500 mt-5">
+          <li class="px-3 cursor-pointer">Privacy</li>
+          <li class="px-3 cursor-pointer">Contact</li>
+        </ul>
+      </div>
+    </section>
+    <section class="copy_write absolute bottom-5">
+      <p>© 2026 City Touch. All Rights Reserved.</p>
+    </section>
+
+   
 
     <script src="./script/login.js"></script>
   </body>

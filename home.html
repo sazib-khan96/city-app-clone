@@ -18,23 +18,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="./stylesheet/style.css">
   </head>
 
 
-  <body class="max-w-sm h-screen mx-auto relative bg-slate-200 overflow-hidden">
+  <body class="max-w-sm  mx-auto relative bg-slate-200 overflow-hidden">
     <!-- =====main interface section start here ========= -->
     <section class="relative h-screen">
       <!-- navigation section start here  -->
-      <div
+      <section
         class="flex justify-between p-4 bg-red-500 text-white cursor-pointer items-center h-[10vh]"
       >
         <i id="Log_out_btn" class="fa-solid fa-arrow-right-from-bracket"></i>
-        <h1 class="font-extrabold">City Clone</h1>
+        <h1 class="font-semi-bold text-2xl">City Clone</h1>
         <i class="fa-solid fa-align-right"></i>
-      </div>
+      </section>
       <!-- user information section start here  -->
+
+      
        <!-- account section  -->
-      <section class="" >
+      <section id="account_sec_container" class="container" >
         <div
         class="p-5 h-[20vh] bg-red-500 flex flex-col justify-center"
       >
@@ -73,40 +77,45 @@
           <p class="mt-5">Tap to see Balance</p>
          </div>
 
-
+      </div>
+       <!-- card inside info container start here  -->
+      <div>
+        
       </div>
       </section>
 
+
+
       <!-- transform section =========== -->
-       <section class="transform_container p-3 hidden">
+       <section id="transfer_sec_container" class="transform_container container p-3 hidden">
         <!-- grid parent container  -->
-        <div class="grid grid-cols-2 ">
-           <div class="p-5 border flex flex-col justify-center items-center">
+        <div class="grid grid-cols-2 gap-5">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             <i class="fa-regular fa-house text-red-500 text-5xl mb-2 "></i>
             <p class="text-red-700">City Bank Account</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center" >
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center" >
             <i class="fa-solid fa-building-columns text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Others Bank A/C</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             <i class="fa-solid fa-cash-register text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Cash by Code</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             <i class="fa-solid fa-recycle text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Binimoy</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             <i class="fa-regular fa-envelope text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Email Transfer</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             <i class="fa-thin fa-mobile-screen-button text-red-500 text-5xl mb-2"></i>
             <i class="fa-solid fa-mobile-screen-button text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Mobile transfer</p>
@@ -114,69 +123,125 @@
         </div>
        </section>
 
+
+
        <!-- payment section container ========= -->
-        <section class="payment_container hidden">
-            <div class="grid grid-cols-2 ">
-           <div class="p-5 border flex flex-col justify-center items-center">
+        <section id="payment_Sec_container" class="payment_container container p-3 hidden">
+          
+            <div class="grid grid-cols-2 gap-5 ">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             <i class="fa-solid fa-earth-africa text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Mobile Recharge</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center" >
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center" >
             <i class="fa-solid fa-id-card text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">City Credit Card</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center ">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center ">
             <i class="fa-solid fa-house-chimney-crack text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">insurance</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
            <i class="fa-solid fa-newspaper text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Bill & Fees</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             <i class="fa-solid fa-check-to-slot text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Value Added Service</p>
            </div>
 
-           <div class="p-5 border flex flex-col justify-center items-center">
+           <div class="p-5 border border-red-200 rounded-lg flex flex-col justify-center items-center">
             
              <i class="fa-brands fa-amazon-pay text-red-500 text-5xl mb-2"></i>
             <p class="text-red-700">Visa Instant Payment</p>
            </div>
         </div>
         </section>
+
+        <!-- explore section container  -->
+         <section id="exolore_sec_container" class="p-3 hidden container">
+          <!-- Quick Service container  -->
+          <div class="bg-gray-100 p-3 rounded-lg my-2">
+            <h4 class="font-bold">Quick Services:</h4>
+            <ul>
+              <li class="flex justify-between py-1  text-red-400">ATM Locator <span><i class="fa-solid fa-angle-right py-1"></i></span></li>
+
+              <li  class="flex justify-between py-1  text-red-400">Branch Locator <span><i class="fa-solid fa-angle-right"></i></span></li>
+
+              <li  class="flex justify-between py-1  text-red-400" >Exchange Rates <span><i class="fa-solid fa-angle-right"></i></span></li>
+
+              <li  class="flex justify-between py-1 text-red-400">Service Charges <span><i class="fa-solid fa-angle-right"></i></span></li>
+            </ul>
+          </div>
+          <!-- Banking Tools  -->
+            <div class="bg-gray-100 p-3 rounded-lg my-2">
+            <h4 class="font-bold">Banking Tools:</h4>
+            <ul>
+              <li class="flex justify-between py-1  text-red-400">EMI Calculator<span><i class="fa-solid fa-angle-right py-1"></i></span></li>
+
+              <li  class="flex justify-between py-1  text-red-400">Loan Calculator<span><i class="fa-solid fa-angle-right"></i></span></li>
+
+              <li  class="flex justify-between py-1  text-red-400" >Deposit Calculator<span><i class="fa-solid fa-angle-right"></i></span></li>
+
+              <li  class="flex justify-between py-1 text-red-400">Card Benefits<span><i class="fa-solid fa-angle-right"></i></span></li>
+            </ul>
+          </div>
+
+          <!-- Security -->
+            <div class="bg-gray-100 p-3 rounded-lg">
+            <h4 class="font-bold">Security:</h4>
+            <ul>
+              <li class="flex justify-between py-1  text-red-400">Change Password<span><i class="fa-solid fa-angle-right py-1"></i></span></li>
+
+              <li  class="flex justify-between py-1  text-red-400">Device Management<span><i class="fa-solid fa-angle-right"></i></span></li>
+
+              <li  class="flex justify-between py-1  text-red-400" >Privacy Settings<span><i class="fa-solid fa-angle-right"></i></span></li>
+
+              <li  class="flex justify-between py-1 text-red-400">Security Tips<span><i class="fa-solid fa-angle-right"></i></span></li>
+            </ul>
+          </div>
+
+         </section>
     </section>
+
+
+
     <!-- ==========footer section  start here ============= -->
     <section>
       <div
-        class="flex justify-between bg-gray-50 h-20 w-[100%] absolute bottom-0 left-0 p-3 rounded-t-2xl"
+        class="flex justify-between bg-gray-50 h-20 w-[100%] fixed  bottom-0 left-0 right-0 max-w-sm mx-auto p-3 rounded-t-2xl"
       >
-        <div class="text-center cursor-pointer">
+        <div id="account_container_btn" class="text-center cursor-pointer footer_item_btn">
           <i class="fa-solid fa-key text-sm"></i>
           <h3 class="text-sm">Account</h3>
         </div>
-        <div class="text-center cursor-pointer">
+
+        <div id="transfer_container_btn" class="text-center cursor-pointer footer_item_btn ">
           <i class="fa-solid fa-arrow-right-arrow-left text-sm"></i>
           <h3 class="text-sm">Transfers</h3>
         </div>
-        <div class="text-center cursor-pointer border p-5 flex flex-col items-center justify-center rounded-3xl">
+
+        <div id="Qr_container_btn" class="text-center cursor-pointer border border-red-500 p-5 flex flex-col items-center justify-center rounded-3xl footer_item_btn">
           <i class="fa-sharp fa-solid fa-qrcode"></i>
           <h3 class="text-sm">QR</h3>
         </div>
-        <div class="text-center cursor-pointer">
+
+        <div id="payment_container_btn" class="text-center cursor-pointer footer_item_btn">
           <i class="fa-solid fa-money-bill-1-wave text-sm"></i>
           <h3 class="text-sm">Payments</h3>
         </div>
-        <div class="text-center cursor-pointer">
+
+        <div id="explore_container_btn" class="text-center cursor-pointer btn_bottom_icon footer_item_btn">
           <i class="fa-regular fa-compass text-sm"></i>
           <h3 class="text-sm">Explore</h3>
         </div>
       </div>
     </section>
+   
     <script src="./script/home.js"></script>
   </body>
 </html>
